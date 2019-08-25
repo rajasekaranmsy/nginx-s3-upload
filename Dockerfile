@@ -31,7 +31,7 @@ RUN ./configure --sbin-path=/usr/local/sbin \
                 --with-http_ssl_module \
                 --add-module=/tmp/ngx_devel_kit \
                 --add-module=/tmp/set-misc-nginx-module \
-                --add-module=/tmp/lua-nginx-module && \
+                --add-module=/tmp/lua-nginx-module \
 		--with-http_addition_module \
 		--with-http_v2_module \
 		--with-file-aio \
