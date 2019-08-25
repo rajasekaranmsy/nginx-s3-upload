@@ -1,6 +1,4 @@
-FROM ubuntu
-
-MAINTAINER James Martinez <jamescmartinez@gmail.com>
+FROM ubuntu:16.04
 
 # Install prerequisites for Nginx compile
 RUN apt-get update && \
