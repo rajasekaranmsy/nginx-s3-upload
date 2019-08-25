@@ -7,12 +7,12 @@ Create a `.env` file to hold your environment variables for Nginx. You can base 
 
 Using Docker, build the image.
 ```bash
-$ docker build -t jamescmartinez/nginx-s3-upload .
+$ docker build -t nginx/nginx-s3-upload .
 ```
 
 After the image is built, create a container.
 ```bash
-$ docker run -d -p 80:80 --env-file=.env jamescmartinez/nginx-s3-upload
+$ docker run -d -p 80:80 --env-file=.env nginx/nginx-s3-upload
 ```
 
 ## Usage
