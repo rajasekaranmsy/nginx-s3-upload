@@ -1,6 +1,12 @@
 # Nginx S3 File Upload Proxy
 S3 file upload proxy using Nginx, complete with AWS authentication.
 
+## References
+
+- https://github.com/openresty/set-misc-nginx-module#installation
+
+- https://www.vultr.com/docs/how-to-compile-nginx-from-source-on-ubuntu-16-04
+
 ## Installation
 
 Create a `.env` file to hold your environment variables for Nginx. You can base on the `.env.example` file contained in root folder.
