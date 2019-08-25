@@ -32,6 +32,16 @@ RUN ./configure --sbin-path=/usr/local/sbin \
                 --add-module=/tmp/ngx_devel_kit \
                 --add-module=/tmp/set-misc-nginx-module \
                 --add-module=/tmp/lua-nginx-module && \
+		--with-http_addition_module \
+		--with-http_v2_module \
+		--with-file-aio \
+		--with-compat \
+		--with-threads \
+		--with-http_auth_request_module \
+		--with-http_sub_module \
+		--with-http_gzip_static_module \
+		--with-http_gunzip_module \
+		--with-http_v2_module && \
     make && \
     make install
 

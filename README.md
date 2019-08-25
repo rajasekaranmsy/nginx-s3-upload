@@ -30,9 +30,30 @@ $ curl -T path/to/file/to/upload http://nginx-s3-upload.yourdomain.com/uploads/e
 
 The response will contain a header, `X-File-URL`, with the location of the file on your S3 bucket.
 
-## Contributing
+## Adding Nginx to systemd as service
 
-Issue a pull request and I will love you forever.
+```bash
+sudo cp nginx.service  /etc/systemd/system/nginx.service
+```
+
+## Enabling Nginx Service
+
+```bash
+sudo systemctl start nginx.service && sudo systemctl enable nginx.service
+
+```
+## Is Nginx Service enabled
+
+```bash
+sudo systemctl is-enabled nginx.service
+```
+
+## Start / Stop Nginx Service
+
+```bash
+sudo systemctl start nginx
+sudo systemctl stop nginx
+```
 
 ## License
 
